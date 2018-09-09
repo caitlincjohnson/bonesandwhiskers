@@ -5,10 +5,10 @@ class NavigationBar extends Component {
   render() {
     return (
       <div>
-        <Navbar inverse collapseOnSelect>
+        <Navbar className="navbar" inverse collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#brand">Bones & Whiskers</a>
+              <a id="brand" href="#brand">Bones & Whiskers</a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
