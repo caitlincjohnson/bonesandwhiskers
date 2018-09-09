@@ -3,8 +3,31 @@ import { Button, FormGroup, FormControl,  } from 'react-bootstrap';
 import video from './hero_video.mp4';
 
 class Hero extends Component {
+  constructor(props){
+    super(props)
+
+    this.handleChange = this.handleChange.bind(this);
+
+    this.state = {
+      header: "Coming Soon",
+      description: " Tijuana's first inclusive cage-free dog daycare and boarding service.",
+      email: ""
+    }
+  }
+
+  handleChange(e) {
+    this.setState({ email: e.target.value});
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault()
+    this.props.handleNewEmail(this.state)
+  }
 
   render() {
+    // Deconstruct the variables to make it easier to read
+    let {header, description} = this.state
+
     return (
       <div className="Hero">
 
@@ -15,15 +38,17 @@ class Hero extends Component {
         </video>
 
         <cover>
-          <h1>Coming soon</h1>
-          <h2>Tijuanas first cage-free dog daycare</h2>
+          <h1>{header}</h1>
+          <h2>{description}</h2>
           <form className="signup-form">
             <FormGroup className = 'form-item' controlId="email">
               <label id="email"></label>
               <FormControl
                 id="email-form"
+                value={this.state.email}
                 bsSize="large"
                 type="email"
+                onChange={this.handleChange}
                 placeholder="Enter your email address"
               />
             </FormGroup>

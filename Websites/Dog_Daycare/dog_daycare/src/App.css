@@ -25,6 +25,11 @@ cover > h1 {
   text-shadow: 3px 3px black;
 }
 
+cover > h2 {
+  width: 50vw;
+  height: auto;
+}
+
 .signup-form {
   display: flex;
   flex-direction: row;
@@ -47,5 +52,5 @@ cover > h1 {
 #brand {
   font-family: 'Amatic SC', cursive;
   color: white;
-  font-size: 2em;
+  font-size: 2.5em;
 }

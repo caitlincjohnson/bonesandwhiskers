@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import NavigationBar from './components/navbar.js';
+import NavigationBar from './components/navbar_landingpage.js';
 import Hero from './components/hero.js';
 
 class App extends Component {
