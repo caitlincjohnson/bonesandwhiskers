@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import {Navbar, Nav, NavItem} from 'react-bootstrap';
+import {Navbar, Nav, NavItem, Button} from 'react-bootstrap';
 
 class NavigationBar extends Component {
+
   render() {
+
     return (
       <div>
         <Navbar className="navbar" inverse collapseOnSelect>
@@ -14,9 +16,9 @@ class NavigationBar extends Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav pullRight>
-              <NavItem eventKey={1} href="#">
+              <Button id="contact-btn" className = "btn" eventkey={"Clicked on me"} href="#">
                 Contact Us
-              </NavItem>
+              </Button>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

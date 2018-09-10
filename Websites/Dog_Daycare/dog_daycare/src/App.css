@@ -2,10 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   height: 100vh;
   width: auto;
-  background-image: url(/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -16,6 +14,47 @@ cover {
   position: fixed;
   top: 25%;
   left: 5%;
+}
+
+#background-video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .Hero {
+        background-image: url(/assets/dog_background.jpg);
+        background-size: cover;
+    }
+
+    cover {
+      top: 5%;
+    }
+
+    #background-video {
+      opacity: 0;
+    }
+
+    #header {
+      font-size: 7em;
+    }
+
+    #description {
+      width: 90vw;
+    }
+
+    #email-form {
+      width: 90vw !important;
+      background: white !important;
+    }
+
+    #signup-btn {
+      width: 90vw !important;
+      margin: 0 !important;
+    }
+
 }
 
 cover > h1 {
@@ -43,6 +82,7 @@ cover > h2 {
 #email-form {
   background: transparent;
   width: 30vw;
+  color: white;
 }
 
 .navbar {
@@ -53,4 +93,13 @@ cover > h2 {
   font-family: 'Amatic SC', cursive;
   color: white;
   font-size: 2.5em;
+}
+
+#contact-btn {
+  margin-top: 7px;
+}
+
+#contact-btn:hover {
+  background-color: inherit;
+  color: white;
 }

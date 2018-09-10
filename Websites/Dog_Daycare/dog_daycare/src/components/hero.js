@@ -21,7 +21,6 @@ class Hero extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    this.props.handleNewEmail(this.state)
   }
 
   render() {
@@ -38,9 +37,9 @@ class Hero extends Component {
         </video>
 
         <cover>
-          <h1>{header}</h1>
-          <h2>{description}</h2>
-          <form className="signup-form" action="https://bonesandwhiskers.us19.list-manage.com/subscribe/post?u=7071f58677097149403fcf33e&amp;id=c19969c090" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+          <h1 id="header">{header}</h1>
+          <h2 id="description">{description}</h2>
+          <form className="signup-form">
             <FormGroup className = 'form-item' controlId="email">
               <label id="email"></label>
               <FormControl
@@ -52,7 +51,7 @@ class Hero extends Component {
                 placeholder="Enter your email address"
               />
             </FormGroup>
-            <Button id="signup-btn" type="submit" className="btn btn-info" onClick = {this.handleSubmit}> Sign Up</Button>
+            <Button id="signup-btn" type="submit" className="btn btn-info"> Sign Up</Button>
           </form>
         </cover>
       </div>
