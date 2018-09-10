@@ -27,6 +27,7 @@ cover {
     .Hero {
         background-image: url(/assets/dog_background.jpg);
         background-size: cover;
+        bottom: 0px
     }
 
     cover {
@@ -38,7 +39,7 @@ cover {
     }
 
     #header {
-      font-size: 7em;
+      font-size: 5em;
     }
 
     #description {
