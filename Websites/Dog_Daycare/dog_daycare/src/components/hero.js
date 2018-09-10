@@ -40,7 +40,7 @@ class Hero extends Component {
         <cover>
           <h1>{header}</h1>
           <h2>{description}</h2>
-          <form className="signup-form">
+          <form className="signup-form" action="https://bonesandwhiskers.us19.list-manage.com/subscribe/post?u=7071f58677097149403fcf33e&amp;id=c19969c090" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
             <FormGroup className = 'form-item' controlId="email">
               <label id="email"></label>
               <FormControl
