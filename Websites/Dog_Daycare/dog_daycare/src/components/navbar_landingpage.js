@@ -14,13 +14,6 @@ class NavigationBar extends Component {
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
-          <Navbar.Collapse>
-            <Nav pullRight>
-              <Button id="contact-btn" className = "btn" eventkey={"Clicked on me"} href="#">
-                Contact Us
-              </Button>
-            </Nav>
-          </Navbar.Collapse>
         </Navbar>
       </div>
     );

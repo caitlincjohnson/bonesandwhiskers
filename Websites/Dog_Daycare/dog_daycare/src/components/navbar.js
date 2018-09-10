@@ -28,9 +28,9 @@ class NavigationBar extends Component {
               </NavItem>
             </Nav>
             <Nav pullRight>
-              <NavItem eventKey={1} href="#">
+              <Button id="contact-btn" className = "btn" eventkey={"Clicked on me"} href="#">
                 Contact Us
-              </NavItem>
+              </Button>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
