@@ -39,10 +39,10 @@ class Hero extends Component {
         <cover>
           <h1 id="header">{header}</h1>
           <h2 id="description">{description}</h2>
-          <form className="signup-form">
-            <FormGroup className = 'form-item' controlId="email">
-              <label id="email"></label>
+          <form className="signup-form" action="https://bonesandwhiskers.us19.list-manage.com/subscribe/post?u=7071f58677097149403fcf33e&amp;id=c19969c090" method="post" target="_blank" novalidate>
+            <FormGroup className='form-item' controlId="email">
               <FormControl
+                name="EMAIL"
                 id="email-form"
                 value={this.state.email}
                 bsSize="large"
@@ -50,6 +50,9 @@ class Hero extends Component {
                 onChange={this.handleChange}
                 placeholder="Enter your email address"
               />
+              <div style={{position: "absolute", left: "-5000px"}} aria-hidden="true">
+                <input type="text" name="b_7071f58677097149403fcf33e_c19969c090" tabindex="-1" value="" />
+              </div>
             </FormGroup>
             <Button id="signup-btn" type="submit" className="btn btn-info"> Sign Up</Button>
           </form>
